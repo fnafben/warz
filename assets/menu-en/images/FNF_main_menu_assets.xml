@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="texture.png" width="4064" height="645">
+	<SubTexture name="freeplay basic0000" x="1987" y="1" width="484" height="122" frameX="-0" frameY="-0" frameWidth="484" frameHeight="122"/>
+	<SubTexture name="freeplay basic0003" x="2474" y="1" width="484" height="122" frameX="-0" frameY="-0" frameWidth="484" frameHeight="122"/>
+	<SubTexture name="freeplay basic0006" x="2961" y="1" width="484" height="122" frameX="-0" frameY="-0" frameWidth="484" frameHeight="122"/>
+	<SubTexture name="freeplay white0000" x="1237" y="118" width="627" height="168" frameX="-0" frameY="-0" frameWidth="635" frameHeight="174"/>
+	<SubTexture name="freeplay white0001" x="1" y="243" width="632" height="170" frameX="-3" frameY="-1" frameWidth="635" frameHeight="174"/>
+	<SubTexture name="freeplay white0002" x="1534" y="297" width="628" height="173" frameX="-4" frameY="-1" frameWidth="635" frameHeight="174"/>
+	<SubTexture name="story mode basic0000" x="3448" y="1" width="615" height="122" frameX="-0" frameY="-0" frameWidth="615" frameHeight="122"/>
+	<SubTexture name="story mode basic0003" x="1" y="117" width="615" height="122" frameX="-0" frameY="-0" frameWidth="615" frameHeight="122"/>
+	<SubTexture name="story mode basic0006" x="619" y="118" width="615" height="122" frameX="-0" frameY="-0" frameWidth="615" frameHeight="122"/>
+	<SubTexture name="story mode white0000" x="2165" y="298" width="796" height="173" frameX="-0" frameY="-3" frameWidth="796" frameHeight="181"/>
+	<SubTexture name="story mode white0001" x="2964" y="298" width="794" height="174" frameX="-2" frameY="-2" frameWidth="796" frameHeight="181"/>
+	<SubTexture name="story mode white0002" x="1" y="463" width="794" height="181" frameX="-0" frameY="-0" frameWidth="796" frameHeight="181"/>
+	<SubTexture name="more games basic0000" x="1" y="1" width="659" height="113" frameX="-5" frameY="-8" frameWidth="670" frameHeight="130"/>
+	<SubTexture name="more games basic0001" x="663" y="1" width="659" height="114" frameX="-5" frameY="-7" frameWidth="670" frameHeight="130"/>
+	<SubTexture name="more games basic0002" x="1325" y="1" width="659" height="114" frameX="-5" frameY="-7" frameWidth="670" frameHeight="130"/>
+	<SubTexture name="more games white0000" x="2760" y="126" width="888" height="169" frameX="-23" frameY="-7" frameWidth="936" frameHeight="188"/>
+	<SubTexture name="more games white0001" x="1867" y="126" width="890" height="168" frameX="-21" frameY="-8" frameWidth="936" frameHeight="188"/>
+	<SubTexture name="more games white0002" x="636" y="289" width="895" height="171" frameX="-17" frameY="-8" frameWidth="936" frameHeight="188"/>
+</TextureAtlas>

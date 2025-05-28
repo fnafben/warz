@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>fnfclassic</title>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+<script type="text/javascript" src="./fnfclassic.js"></script>
+<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+			var meta = document.getElementById ("viewport");
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+		}
+	</script>
+<script>
+		let banner;
+		addEventListener("blur", () => {
+			banner = document.createElement("div");
+			banner.style.position = "fixed";
+			banner.style.top = "0";
+			banner.style.left = "0";
+			banner.style.width = "100%";
+			banner.style.height = "100%";
+			banner.style.background = "rgba(0, 0, 0, 0.5)";
+			document.body.appendChild(banner);
+
+			const iconBG = document.createElement("div");
+			iconBG.style.position = "absolute";
+			iconBG.style.top = "50%";
+			iconBG.style.left = "50%";
+			iconBG.style.width = "100px";
+			iconBG.style.height = "100px";
+			iconBG.style.marginLeft = "-50px";
+			iconBG.style.marginTop = "-50px";
+			iconBG.style.background = "rgba(255, 255, 255, 0.5)";
+			iconBG.style.borderRadius = "50%";
+			banner.appendChild(iconBG);
+
+			const line1 = document.createElement("div");
+			line1.style.position = "absolute";
+			line1.style.top = "50%";
+			line1.style.left = "50%";
+			line1.style.width = "20px";
+			line1.style.height = "50px";
+			line1.style.marginLeft = "-25px";
+			line1.style.marginTop = "-25px";
+			line1.style.background = "black";
+			iconBG.appendChild(line1);
+
+			const line2 = document.createElement("div");
+			line2.style.position = "absolute";
+			line2.style.top = "50%";
+			line2.style.left = "50%";
+			line2.style.width = "20px";
+			line2.style.height = "50px";
+			line2.style.marginLeft = "5px";
+			line2.style.marginTop = "-25px";
+			line2.style.background = "black";
+			iconBG.appendChild(line2);
+		});
+
+		addEventListener("focus", () => {
+			if (banner) {
+				document.body.removeChild(banner);
+				banner = null;
+			}
+		});
+
+		addEventListener("contextmenu", (event) => {
+			event.preventDefault();
+		});
+	</script>
+<script>
+		addEventListener("contextmenu", (event) => {
+			event.preventDefault();
+		});
+  </script>
+<style>
+		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+		#content { background: #000000; width: 100%; height: 100%; }
+		@font-face {
+			font-family: 'MultiType Pixel Regular';
+			src: url('assets/fonts/MultiTypePixel.eot?#iefix') format('embedded-opentype'),
+			url('assets/fonts/MultiTypePixel.woff') format('woff'),
+			url('assets/fonts/MultiTypePixel.ttf') format('truetype'),
+			url('assets/fonts/MultiTypePixel.svg#MultiType%20Pixel%20Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Pixel Arial 11 Bold';
+			src: url('assets/fonts/pixel.eot?#iefix') format('embedded-opentype'),
+			url('assets/fonts/pixel.woff') format('woff'),
+			url('assets/fonts/pixel.otf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Nokia Cellphone FC Small';
+			src: url('flixel/fonts/nokiafc22.eot?#iefix') format('embedded-opentype'),
+			url('flixel/fonts/nokiafc22.woff') format('woff'),
+			url('flixel/fonts/nokiafc22.ttf') format('truetype'),
+			url('flixel/fonts/nokiafc22.svg#Nokia%20Cellphone%20FC%20Small') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monsterrat';
+			src: url('flixel/fonts/monsterrat.eot?#iefix') format('embedded-opentype'),
+			url('flixel/fonts/monsterrat.woff') format('woff'),
+			url('flixel/fonts/monsterrat.ttf') format('truetype'),
+			url('flixel/fonts/monsterrat.svg#Monsterrat') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+	</style>
+</meta></head>
+<body>
+<span style="font-family: assets/fonts/MultiTypePixel.ttf"> </span>
+<span style="font-family: assets/fonts/pixel.otf"> </span>
+<span style="font-family: flixel/fonts/nokiafc22.ttf"> </span>
+<span style="font-family: flixel/fonts/monsterrat.ttf"> </span>
+<div id="content"></div>
+<script type="text/javascript">
+		lime.embed ("fnfclassic", "content", 1280, 720);
+	</script>
+</body>
+</html>
